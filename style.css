@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+:root {
+    --background: rgb(76, 56, 148);
+    --container: rgb(101, 35, 255);
+    --buttons: rgb(132, 0, 255);
+    --text-principal: #fff;
+    --text-secondary: rgb(224, 223, 223);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
+    font-size: 10px;
+}
+h1, h2, span {
+    color: var(--text-principal);
+}
+h1 {
+    margin: 20px 0 25px 40px;
+}
+p {
+    color: var(--text-secondary);
+}
+.container {
+    background-color: var(--container);
+    width: 400px;
+    height: 600px;
+    margin: 30px auto 0 auto;
+    padding-top: 20px;
+    border-radius: 30px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+                10px 10px 70px rgba(0, 0, 0, 0.5),
+         inset  5px 5px 10px rgba(0, 0, 0, 0.5),
+         inset  5px 5px 20px rgba(255, 255, 255, 0.2),
+         inset -5px -5px 15px rgba(0, 0, 0, 0.75 ) ;
+}
+.tarjet {
+    display: flex;
+    width: 350px;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-left: 35px;
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    margin: 0 15px 0 0;
+    border-radius: 25px 25px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--buttons);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s;
+    box-shadow: inset  5px 5px 7px rgba(68, 0, 255, 0.25),
+                inset  2px 2px 5px rgba(255, 255, 255, 0.25),
+                inset -3px -3px 5px rgba(0, 0, 0, 0.5 ) ;
+}
+.number:hover {
+    width: 340px;
+}
+span {
+    font-weight: bolder;
+    z-index: 2;
+    position: absolute;
+    left: 15px;
+}
+.name {
+    position: absolute;
+    left: 50px;
+    z-index: 4;
+}
+.tarjet-01 {
+    top: 10px;
+}
+.tarjet-02 {
+    top: 40px;
+}
+.tarjet-03 {
+    top: 70px;
+} 
+.tarjet-04 {
+    top: 100px;
+}
+.tarjet-05 {
+    top: 130px;
+}
+.tarjet-06 {
+    top:160px;
+}
+.tarjet-07 {
+    top: 190px;
+} 
+.tarjet-08 {
+    top: 220px;
+}
